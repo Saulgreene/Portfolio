@@ -13,18 +13,6 @@
       href="assets/logo.png"
     >
     <link rel="stylesheet" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
-    <script id="template" type="text/x-handlebars-template">
-      <h1>{{title}}</h1>
-      <div class="date">
-        Created On: {{date}}
-      </div>
-      <section>
-        <img class="project" src="{{img}}" alt="">
-        <a class="link" href="{{link}}">View Project</a>
-        <p class="description">{{description}}</p>
-        <p class="contributors">{{contributors}}</p>
-      </section>
-    </script>
   </head>
   <header>
     <img src="assets/sglogo.png" id="head-img"alt="">
@@ -39,6 +27,18 @@
         <li class="nav" data-content="info"><a href="#">INFO</a></li>
         <li><a href="https://github.com/Saulgreene">Github</a></li>
       </ul>
+      <script id="template" type="text/x-handlebars-template">
+        <h1>{{title}}</h1>
+        <div class="date">
+          Created On: {{date}}
+        </div>
+        <section>
+          <img class="project" src="{{img}}" alt="">
+          <a class="link" href="{{link}}">View Project</a>
+          <p class="description">{{description}}</p>
+          <p class="contributors">{{contributors}}</p>
+        </section>
+      </script>
     </nav>
   </header>
   <body>
