@@ -203,7 +203,6 @@
   }
   *{
     background-color: white;
-    font-family: monospace;
   }
   .skills h2{
     text-align: center;
@@ -221,5 +220,7 @@
   #list ol li ol li {
     color:gray; height:15px; margin-left:10px;
   }
-
+  .contributors{
+    margin-bottom: 10%;
+  }
 }
