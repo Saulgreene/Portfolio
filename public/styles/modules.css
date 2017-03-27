@@ -1,4 +1,10 @@
+section img{
+  width: 75%;
+  margin-left: 10%;
+}
+
 @media screen and (max-width: 700px){
+
   h2{
     margin-left: 5%;
   }
@@ -113,6 +119,9 @@
 .description, .contributors{
   width: 175%;
 }
+#home h2{
+  display: none;
+}
 }
 
 /* browser view */
@@ -122,6 +131,7 @@
     padding: 0;
     list-style: none;
     clear: both;
+    font-family: 'Oswald', sans-serif;
   }
   header{
     text-align: center;
@@ -133,13 +143,36 @@
   h1{
     padding: 5%;
   }
+  ul li a{
+    text-decoration: none;
+    color: black;
+  }
+  #homeMini h2{
+    display: none;
+  }
+  #home h2{
+    margin-top: 17%;
+    font-size: 150px;
+  }
   li{
     font-size: 12px;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  footer{
+    margin-top: 10%;
+  }
+  #about{
+    margin-left: auto;
+    margin-right: auto;
   }
   img{
     width: 100%;
     margin-left: 0;
     margin-right: 0;
+  }
+  section img{
+    width: 40%;
   }
   .project-pics, .info, .projects, .skills{
     /*border: 2px solid black;*/
@@ -151,9 +184,23 @@
     width: 75%;
     text-align: left;
   }
-
+  .nav-content h2, .nav-content p {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    align-items: center;
+  }
+  .nav-content ul{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nav-content h2{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+  }
   *{
-    background-color: gray;
+    background-color: white;
     font-family: monospace;
   }
 }

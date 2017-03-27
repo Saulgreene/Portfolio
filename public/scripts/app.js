@@ -47,12 +47,10 @@ projectData.forEach(function(object){
   allProjects.push(new Project(object));
 });
 
-
 // allProjects.forEach(function(somethingDifferent){
 //   console.log(somethingDifferent);
 //   $('.projects').append(somethingDifferent.toHtml());
 // });
-
 
 $('.nav-content').hide();
 $('.main-nav').on('click', '.nav', function(){
