@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saul Greene Portfolio</title>
+    <title>Saul Greene</title>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/icon.css">
@@ -11,26 +11,31 @@
     <link rel="stylesheet" href="styles/modules.css">
     <link rel="icon" type="image/x-icon" href="assets/logo.png">
     <link rel="stylesheet" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   </head>
   <header>
     <img src="assets/sglogo.png" id="head-img"alt="">
+    <section class="home" id="home">
+      <h2>SG</h2>
+    </section>
+    <section class="home" id="homeMini">
+      <h2>SAUL GREENE</h2>
+    </section>
     <nav class="main-nav">
       <!-- <h1>Saul Greene</h1> -->
       <span class="icon-menu"></span>
       <ul>
         <li class="nav" data-content= "home"><a href="#">HOME</a></li>
-        <li class="nav" data-content= "about"><a href="#">ABOUT</a></li>
         <li class="nav" data-content="projects"><a href="#">PROJECTS</a></li>
+        <li class="nav" data-content= "about"><a href="#">ABOUT</a></li>
         <li class="nav" data-content="skills"><a href="#">SKILLS</a></li>
-        <li class="nav" data-content="info"><a href="#">INFO</a></li>
-        <li><a href="https://github.com/Saulgreene">Github</a></li>
       </ul>
       <script id="template" type="text/x-handlebars-template">
+        <section id="templateInfo">
         <h1>{{title}}</h1>
         <div class="date">
           Created On: {{date}}
         </div>
-        <section>
           <img class="project" src="{{img}}" alt="">
           <a class="link" href="{{link}}">View Project</a>
           <p class="description">{{description}}</p>
@@ -40,11 +45,8 @@
     </nav>
   </header>
   <body>
-    <section class="home" id="home">
-      <h2>HOME PAGE</h2>
-    </section>
     <section class="nav-content" id="about">
-      <h2>About</h2>
+      <h2>About</h2><br><br>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </section>
     <section class="nav-content" id="projects">
@@ -53,7 +55,7 @@
     </section>
   <section class="nav-content" id="skills">
     <div class="skills">
-      <h2>Skills</h2>
+      <h2>Skills</h2><br><br>
       <ul>
         <li>Javascript</li>
           <li>Handlebars</li>
