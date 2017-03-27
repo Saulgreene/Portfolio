@@ -1,10 +1,6 @@
-section img{
-  width: 75%;
-  margin-left: 10%;
-}
+
 
 @media screen and (max-width: 700px){
-
   h2{
     margin-left: 5%;
   }
@@ -140,9 +136,7 @@ section img{
   #head-img{
     display: none;
   }
-  h1{
-    padding: 5%;
-  }
+
   ul li a{
     text-decoration: none;
     color: black;
@@ -162,6 +156,14 @@ section img{
   footer{
     margin-top: 10%;
   }
+  #about-me-pic{
+    max-width: 18%;
+    float: right;
+    margin-right: 26%;
+    margin-left: 2%;
+    border: 2px solid black;
+  }
+
   #about{
     margin-left: auto;
     margin-right: auto;
@@ -171,25 +173,24 @@ section img{
     margin-left: 0;
     margin-right: 0;
   }
-  section img{
-    width: 40%;
+  section{
+    margin-left: 20%;
+    margin-right: 20%;
   }
-  .project-pics, .info, .projects, .skills{
+
+  .project-pics, .info, .projects{
     /*border: 2px solid black;*/
     padding: 1%;
-    margin-left: 1%;
     margin-right: auto;
     margin-top: 3%;
     margin-bottom: 3%;
     width: 75%;
     text-align: left;
   }
-  .nav-content h2, .nav-content p {
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
-    align-items: center;
+  .justifyP{
+    text-align: justify;
   }
+
   .nav-content ul{
     margin-left: auto;
     margin-right: auto;
@@ -203,4 +204,21 @@ section img{
     background-color: white;
     font-family: monospace;
   }
+  .skills h2{
+    text-align: center;
+  }
+  #list {
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 2%;
+    color:black;
+    border: 2px solid black;
+  }
+  #list ol {
+    font-size:20px;
+  }
+  #list ol li ol li {
+    color:gray; height:15px; margin-left:10px;
+  }
+
 }
