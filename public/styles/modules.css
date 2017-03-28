@@ -1,57 +1,20 @@
 
+@image and screen(max width: 700px){
+  background-color: gray;
+}
 
-@media screen and (max-width: 700px){
-  h2{
-    margin-left: 5%;
-  }
-  ul{
-    margin-left: 6%;
-  }
-  header{
-  display: inline;
-  }
-  nav{
-  float: right;
-  }
-  .projects img{
-    width: 170%;
-    %;
-    border: 4px double gray;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-  .projects{
-    width: 50%;
-  }
   .main-nav {
     padding: 0.1em;
     width: 100%;
     text-align: center;
   }
-  #bars {
-	content: "\2261";
-  float: right;
-  width: 5%;
-  height: 5%;
-  margin-right: 2%;
-  }
-  .main-nav ul {
+  /*.main-nav ul {
     display: none;
     list-style: none;
     clear: both;
     margin-left: 8%;
-  }
+  }*/
 
-  .template{
-    display: none;
-  }
-  .main-nav li{
-    padding: 0.5em;
-    margin: 3%;
-    text-align: center;
-    border: 4px solid gray;
-    background-color: black;
-  }
   a{
     text-decoration-color: gray;
     color: gray;
@@ -59,71 +22,17 @@
   }
   .main-nav:hover ul {
     display: inline-block;
-    width: 100;
+    width: 100%;
   }
   img{
     width: 100%;
     margin-left: 0;
     margin-right: 0;
   }
-  img .project-pics{
-    width: 50%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  div{
-    clear: both;
-  }
-  header{
-    text-align: center;
-    padding: 0;
-    width: 100%;
-  }
-  h1{
-    margin-top: 20%;
-    margin-left: 10%;
-    float: left;
-    font-weight: bold;
-  }
-  li{
-    font-size: 12px;
-    /*display: inline;*/
-    text-decoration: none;
-    margin-left: 5%;
-  }
-  p{
-    margin-left: 5%;
-  }
-
-  .project-pics, .info, .skills{
-    /*border: 2px solid black;*/
-    padding: 1%;
-    margin-left: 3%;
-    margin-right: 3%;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    width: 75%;
-    text-align: left;
-  }
-  .description, .contributors, .link, .date, .title{
-    margin-left: 10%;
-  }
-.projects{
-  width: 50%;
-  margin: 0%;
-}
-.description, .contributors{
-  width: 175%;
-}
-#home h2{
-  display: none;
-}
 }
 
-/* browser view */
-@media screen and (min-width: 700px){
   .main-nav ul li {
-    display: inline-block;
+    display: inline;
     padding: 0;
     list-style: none;
     clear: both;
@@ -175,8 +84,8 @@
     margin-right: 0;
   }
   section{
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .project-pics, .info, .projects{
@@ -221,6 +130,6 @@
     color:gray; height:15px; margin-left:10px;
   }
   .contributors{
-    margin-bottom: 10%;
+    margin-bottom: 7%;
   }
 }
