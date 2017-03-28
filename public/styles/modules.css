@@ -1,6 +1,9 @@
 
-@image and screen(max width: 700px){
-  background-color: gray;
+@media and screen (max width: 700px;){
+  h1{
+    background-color: gray;
+
+  }
 }
 
   .main-nav {
