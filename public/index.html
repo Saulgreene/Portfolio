@@ -18,9 +18,6 @@
     <section class="home" id="home">
       <h2>SG</h2>
     </section>
-    <section class="home" id="homeMini">
-      <h2>SAUL GREENE</h2>
-    </section>
     <nav class="main-nav">
       <!-- <h1>Saul Greene</h1> -->
       <span class="icon-menu"></span>
@@ -32,14 +29,16 @@
       </ul>
       <script id="template" type="text/x-handlebars-template">
         <section id="templateInfo">
+        <div id="box-around">
         <h1>{{title}}</h1>
-        <div class="date">
-          Created On: {{date}}
-        </div>
           <img class="project" src="{{img}}" alt="">
           <a class="link" href="{{link}}">View Project</a>
-          <p class="description">{{description}}</p>
-          <p class="contributors">{{contributors}}</p>
+          <div class="date">
+            Created On: {{date}}
+          </div><br>
+          <p class="description">{{description}}</p><br>
+          <p class="contributors">Contributors: {{contributors}}</p>
+        </div>
         </section>
       </script>
     </nav>
@@ -47,10 +46,10 @@
   <body>
     <section class="nav-content" id="about">
       <h2>About</h2><br><br>
-      <p class="justifyP">My name is Saul Greene. I graduated from Washington State Universtiy in 2015 with a degree in Political Science (PreLaw) and continued onto law school at Colifornia Western School of law. I quickly decided that law school was not for me. I took some time to work and figure out what I wanted to do for the next chapter of my life. I loved the structure and locigal aspects of law school, however the legal field wants very in the box thinkers and lacks room for true creativity.</p><br>
+      <p class="justifyP">ADD STUFF</p><br>
       <img id="about-me-pic" src="assets/about-me.jpg" alt="">
-      <p class="justifyP">My cousin had taken courses with Code Fellows and suggested I apply. I was hesitant because I didnt like math for the most part, but after only a few days I fell in love. Programing combined the rule based structures and the creativity I sought. I learned that the logic i loved from law school was prevalent in programming and that there were so many ways to solve one problem in programming which fostered my creative desire.</p><br>
-      <p class="justifyP">Though I have only been programming for a short while, it is something I am truly passionate about. I never knew how to tell if you loved something until i stumbled upon programming. My 11 hour days feel like 3 hour days and even the stressful days are fulfilling.</p>
+      <p class="justifyP">ADD STUFF</p><br>
+      <p class="justifyP">ADD STUFF</p>
     </section>
     <section class="nav-content" id="projects">
       <h2>Projects</h2><br><br>
@@ -100,12 +99,6 @@
             </li>
          </ol>
       </div>
-    </div>
-  </section>
-  <section class="nav-content" id="info">
-    <div class="info">
-      <h2>Info</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
   </section>
   <footer>
