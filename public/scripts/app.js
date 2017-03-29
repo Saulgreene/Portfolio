@@ -1,5 +1,6 @@
-'use strict'
+'use strict';
 
+(function(module){
 var allProjects =[];
 
 function Project(argument){
@@ -10,6 +11,7 @@ function Project(argument){
   this.link = argument.link;
   this.img = argument.img;
 }
+//projects page//
 Project.all = [];
 allProjects.initIndexPage = function(){
   Project.all.forEach(function(a) {
@@ -22,12 +24,6 @@ Project.prototype.toHtml = function() {
   return templateRender(this);
 }
 
-
-Project.loadAll = function(projectData) {
-  projectData.forEach(function(input) {
-    Project.all.push(new Project(input));
-  })
-};
 
 
 Project.fetchAll = function() {
@@ -43,18 +39,16 @@ Project.fetchAll = function() {
   }
 }
 
-projectData.forEach(function(object){
-  allProjects.push(new Project(object));
-});
-
-// allProjects.forEach(function(somethingDifferent){
-//   console.log(somethingDifferent);
-//   $('.projects').append(somethingDifferent.toHtml());
-// });
-
-$('.nav-content').hide();
-$('.main-nav').on('click', '.nav', function(){
+Project.loadAll = function(projectData) {
+    Project.all = projectData.map(function(input){
+      return new Project(input);
+    });
   $('.nav-content').hide();
-  $('.home').hide();
-  $('#' + $(this).attr('data-content')).fadeIn();
-});
+  $('.main-nav').on('click', '.nav', function(){
+    $('.nav-content').hide();
+    $('.home').hide();
+    $('#' + $(this).attr('data-content')).fadeIn();
+  });
+};
+module.Project = Project;
+})(window);
