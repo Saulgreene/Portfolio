@@ -90,12 +90,16 @@
   footer{
     margin-top: 7%;
     text-align: center;
+    font-size: 12px;
   }
   #about-me-pic{
     max-width: 30%;
     float: right;
     margin-left: 3%;
-    border: 2px solid black;
+    border-radius: 20px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 5px 5px 2.5px #C9C9C9;
   }
   #about{
     margin-left: 30%;
@@ -140,21 +144,25 @@
   #list {
     padding: 3%;
     color:black;
-    border: 2px solid black;
     border-radius: 20px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 5px 5px 2.5px #C9C9C9;
   }
   #list ol {
     font-size:20px;
   }
   #list ol li ol li {
     color:gray; height:15px; margin-left:10px;
+    font-size: 15px;
   }
 
   #box-around{
     padding: 5%;
     margin-bottom: 10%;
-    border: 2px double black;
     border-radius: 20px;
-    background-color: rgba(180, 180, 180, 0.5);
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 5px 5px 2.5px #C9C9C9;
   }
 }
