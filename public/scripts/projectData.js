@@ -1,5 +1,5 @@
 'use strict'
-var projectData = [
+const projectData = [
   {
     title: 'Escape code 201',
     date: '3.17.17',

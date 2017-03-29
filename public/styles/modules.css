@@ -155,8 +155,6 @@
     margin-bottom: 10%;
     border: 2px double black;
     border-radius: 20px;
-    background-color: 	rgb(51, 51, 51, 1) ;
-    opacity: 50%;
-
+    background-color: rgba(180, 180, 180, 0.5);
   }
 }
