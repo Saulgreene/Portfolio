@@ -40,9 +40,9 @@
   }
 
   Project.loadAll = function(projectData) {
-      Project.all = projectData.map(function(input){
-        return new Project(input);
-      });
+    Project.all = projectData.map(function(input){
+      return new Project(input);
+    });
     $('.nav-content').hide();
     $('.main-nav').on('click', '.nav', function(){
       $('.nav-content').hide();
@@ -50,5 +50,5 @@
       $('#' + $(this).attr('data-content')).fadeIn();
     });
   };
-module.Project = Project;
+  module.Project = Project;
 })(window);
