@@ -149,12 +149,14 @@
     background-color: white;
     box-shadow: 5px 5px 2.5px #C9C9C9;
   }
-  #list ol {
-    font-size:20px;
+  #list ol li{
+    font-size:18px;
+    font-family: 'Oswald', sans-serif;
   }
   #list ol li ol li {
     color:gray; height:15px; margin-left:10px;
-    font-size: 15px;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
   }
 
   #box-around{
