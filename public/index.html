@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saul Greene</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/icon.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/modules.css">
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <link rel="stylesheet" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  </head>
+  <header>
+    <img src="assets/sglogo.png" id="head-img"alt="">
+    <section class="home" id="home">
+      <h2>SG</h2>
+    </section>
+    <nav class="main-nav">
+      <!-- <h1>Saul Greene</h1> -->
+      <span class="icon-menu"></span>
+      <ul>
+        <li class="nav" data-content= "home"><a href="#">HOME</a></li>
+        <li class="nav" data-content="projects"><a href="#">PROJECTS</a></li>
+        <li class="nav" data-content= "about"><a href="#">ABOUT</a></li>
+        <li class="nav" data-content="skills"><a href="#">SKILLS</a></li>
+      </ul>
+      <script id="template" type="text/x-handlebars-template">
+        <section id="templateInfo">
+        <div id="box-around">
+        <h1>{{title}}</h1>
+          <img class="project" src="{{img}}" alt="">
+          <a class="link" href="{{link}}">View Project</a>
+          <div class="date">
+            Created On: {{date}}
+          </div><br>
+          <p class="description">{{description}}</p><br>
+          <p class="contributors">Contributors: {{contributors}}</p>
+        </div>
+        </section>
+      </script>
+    </nav>
+  </header>
+  <body>
+    <section class="nav-content" id="about">
+      <h2>About</h2><br><br>
+      <p class="justifyP">ADD STUFF</p><br>
+      <img id="about-me-pic" src="assets/about-me.jpg" alt="">
+      <p class="justifyP">ADD STUFF</p><br>
+      <p class="justifyP">ADD STUFF</p><br><br><br><br>
+    </section>
+    <section class="nav-content" id="projects">
+      <h2>Projects</h2><br><br>
+      <div class="projects">
+      </div>
+    </section>
+  <section class="nav-content" id="skills">
+    <div class="skills">
+      <h2>Skills</h2><br><br>
+      <div id="list">
+         <ol>
+            <li>Proficient With:
+               <ol>
+                  <li>OSX</li>
+                  <li>Windows OS</li>
+               </ol>
+            </li>
+            <li>HTML/CSS</li>
+            <li>Javascript (FE focus, some BE work):
+               <ol>
+                 <li>#MarkDown</li>
+                 <li>Introductory es6</li>
+                 <li>Express</li>
+                 <li>PageJS</li>
+                 <li>ChartsJS</li>
+                 <li>Vanilla JS</li>
+                 <li>Handlebars</li>
+                 <li>jQuery</li>
+                 <li>JSON</li>
+                 <li>AJAX</li>
+                 <li>Postgres</li>
+                 <li>NodeJS</li>
+                 <li>REST protocol</li>
+                 <li>Heroku and Deployment</li>
+                 <li>API Integration</li>
+               </ol>
+            </li>
+            <li>Focus In:
+               <ol>
+                  <li>Functional Programing</li>
+                  <li>Daily Code Review</li>
+                  <li>Git/Github Workflow</li>
+                  <li>Pair/team programming w/merge conflict practice</li>
+                  <li>Individual assignments w/merge conflict practice</li>
+               </ol>
+            </li>
+         </ol>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>Saul Greene</p>
+    <p>253.397.8733</p>
+    <p>Code Fellows Student</p>
+    <p class="icons"><a href="mailto:spdysg@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></p>
+    <p class="icons"><a href="https://www.linkedin.com/in/saul-greene-257ba0132/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></p>
+    <p class="icons"><a href="https://github.com/Saulgreene"><i class="fa fa-github" aria-hidden="true"></i></a></p>
+  </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
+    <script>
+      Project.fetchAll();
+    </script>
+</body>
+</html>

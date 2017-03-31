@@ -1,6 +1,6 @@
 # Portfolio
 Preliminary Portfolio
-
+# SOCIAL MEDIA NOW LINKED AND PICTURES ON PROJECTS PAGE ARE RESPONSIVE
 ## User Stories
 * As a User, I want the images to be responsive, so that content stays properly proportioned.
 * As a User, I want the viewport properly sized, so that content fits all the size I have available.
