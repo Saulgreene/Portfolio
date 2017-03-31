@@ -1,6 +1,8 @@
 # Portfolio
 Preliminary Portfolio
 JS files are into their own scripts folder. Nav-content event handler in app.js also has indentation problems fixed. And got rid of console.logs.
+# resubmission criteria complete
+
 ## User Stories
 * As a User, I want the images to be responsive, so that content stays properly proportioned.
 * As a User, I want the viewport properly sized, so that content fits all the size I have available.
