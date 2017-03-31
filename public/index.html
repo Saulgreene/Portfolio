@@ -22,10 +22,11 @@
       <!-- <h1>Saul Greene</h1> -->
       <span class="icon-menu"></span>
       <ul>
-        <li class="nav" data-content= "home"><a href="#">HOME</a></li>
-        <li class="nav" data-content="projects"><a href="#">PROJECTS</a></li>
-        <li class="nav" data-content= "about"><a href="#">ABOUT</a></li>
-        <li class="nav" data-content="skills"><a href="#">SKILLS</a></li>
+        <li class="nav" data-content= "home"><a href="/">HOME</a></li>
+        <li class="nav" data-content="projects"><a href="/projects">PROJECTS</a></li>
+        <li class="nav" data-content= "about"><a href="/about">ABOUT</a></li>
+        <li class="nav" data-content="skills"><a href="/skills">SKILLS</a></li>
+        <li class="nav" data-content="github-repos"><a href="/ghRepos">GH Repos</a></li>
       </ul>
       <script id="template" type="text/x-handlebars-template">
         <section id="templateInfo">
@@ -44,6 +45,9 @@
     </nav>
   </header>
   <body>
+    <section class="nav-content" id="github-repos">
+
+    </section>
     <section class="nav-content" id="about">
       <h2>About</h2><br><br>
       <p class="justifyP">ADD STUFF</p><br>
@@ -110,7 +114,16 @@
   </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
-    <script type="text/javascript" src="scripts/app.js"></script>
+    <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+    <script type="text/javascript" src="scripts/views/projectView.js"></script>
+    <script type="text/javascript" src="scripts/models/app.js"></script>
+    <script type="text/javascript" src="scripts/controllers/homeController.js"></script>
+    <script type="text/javascript" src="scripts/controllers/projectController.js"></script>
+    <script type="text/javascript" src="scripts/controllers/aboutController.js"></script>
+    <script type="text/javascript" src="scripts/controllers/ghReposController.js"></script>
+    <script type="text/javascript" src="scripts/controllers/skillsController.js"></script>
+    <script type="text/javascript" src="scripts/controllers/routes.js"></script>
+
     <script>
       Project.fetchAll();
     </script>
