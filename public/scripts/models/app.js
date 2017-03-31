@@ -40,12 +40,6 @@
       Project.all = projectData.map(function(input){
         return new Project(input);
       });
-    // $('.nav-content').hide();
-    // $('.main-nav').on('click', '.nav', function(){
-    //   $('.nav-content').hide();
-    //   $('.home').hide();
-    //   $('#' + $(this).attr('data-content')).fadeIn();
-    // });
   };
 module.Project = Project;
 })(window);
