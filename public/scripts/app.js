@@ -25,14 +25,13 @@ projectData.forEach(function(object){
 
 
 allProjects.forEach(function(somethingDifferent){
-  console.log(somethingDifferent);
   $('.projects').append(somethingDifferent.toHtml());
 });
 
 
+$('.nav-content').hide();
+$('.main-nav').on('click', '.nav', function(){
   $('.nav-content').hide();
-  $('.main-nav').on('click', '.nav', function(){
-    $('.nav-content').hide();
-    $('.home').hide();
-    $('#' + $(this).attr('data-content')).fadeIn();
-  })
+  $('.home').hide();
+  $('#' + $(this).attr('data-content')).fadeIn();
+})
