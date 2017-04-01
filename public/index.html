@@ -28,6 +28,12 @@
         <li class="nav" data-content="skills"><a href="/skills">SKILLS</a></li>
         <li class="nav" data-content="github-repos"><a href="/ghRepos">GH Repos</a></li>
       </ul>
+      <script id="repo-template" type="text/x-handlebars-template">
+      <li>
+        <p>Repo Name:</p>
+        <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
+      </li>
+    </script>
       <script id="template" type="text/x-handlebars-template">
         <section id="templateInfo">
         <div id="box-around">
@@ -46,7 +52,7 @@
   </header>
   <body>
     <section class="nav-content" id="github-repos">
-
+      <h2>GitHub Repositories</h2>
     </section>
     <section class="nav-content" id="about">
       <h2>About</h2><br><br>
@@ -116,16 +122,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
     <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
     <script type="text/javascript" src="scripts/views/projectView.js"></script>
-    <script type="text/javascript" src="scripts/models/app.js"></script>
+    <script type="text/javascript" src="scripts/views/repoView.js"></script>
+    <script type="text/javascript" src="scripts/models/repo.js"></script>
+    <script type="text/javascript" src="scripts/models/projectModel.js"></script>
     <script type="text/javascript" src="scripts/controllers/homeController.js"></script>
     <script type="text/javascript" src="scripts/controllers/projectController.js"></script>
     <script type="text/javascript" src="scripts/controllers/aboutController.js"></script>
     <script type="text/javascript" src="scripts/controllers/ghReposController.js"></script>
     <script type="text/javascript" src="scripts/controllers/skillsController.js"></script>
     <script type="text/javascript" src="scripts/controllers/routes.js"></script>
-
     <script>
-      Project.fetchAll();
+    Project.fetchAll();
     </script>
 </body>
 </html>

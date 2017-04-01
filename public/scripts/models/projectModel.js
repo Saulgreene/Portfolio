@@ -28,7 +28,7 @@
       Project.loadAll(JSON.parse(localStorage.projectData));
       allProjects.initIndexPage();
     } else {
-      $.getJSON('scripts/projectData.json', function(response) {
+      $.getJSON('scripts/models/projectData.json', function(response) {
         localStorage.projectData = JSON.stringify(response);
         Project.loadAll(response);
         allProjects.initIndexPage();
