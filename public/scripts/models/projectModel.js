@@ -32,10 +32,9 @@
   }
 
   Project.loadAll = function(projectData) {
-      Project.all = projectData.
-      (function(input){
-        return new Project(input);
-      });
+    Project.all = projectData.map(function(input){
+      return new Project(input);
+    });
   };
-module.Project = Project;
+  module.Project = Project;
 })(window);
